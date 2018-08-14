@@ -73,6 +73,9 @@ void producer_api_plugin::plugin_startup() {
        CALL(producer, producer, paused,
             INVOKE_R_V(producer, paused), 201),
    });
+  
+  
+   ilog("starting producer_api_plugin there is ending");
 }
 
 void producer_api_plugin::plugin_initialize(const variables_map& options) {
